@@ -14,7 +14,10 @@ h1, h2, h3, h4 {
     margin-top: 0;
     font-weight: normal;
 }
-
+img {
+    width: 100%;
+    height: auto;
+}
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -120,13 +123,13 @@ input[type=submit]:hover {
 
   .column {
     .column {
-        -ms-flex: 25%; 
+        -ms-flex: 25%;
         flex: 25%;
         max-width: 25%;
         padding: 0 4px;
       }
-      
-      
+
+
 }
 
 .column img {
@@ -138,7 +141,7 @@ input[type=submit]:hover {
     .column {
       flex: 50%;
       max-width: 50%;
-    }  
+    }
 @media screen and (max-width: 600px) {
     .column {
       flex: 100%;
