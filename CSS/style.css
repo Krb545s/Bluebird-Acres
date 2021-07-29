@@ -242,10 +242,6 @@
         padding-right: 160px; 
     }
     
-    .testimonial-quote.right img {
-        grid-column-start: ;
-    }
-    
     .testimonial-quote.right cite {
         text-align: right; 
     }
@@ -270,4 +266,9 @@
 
 .WelcomeIndex {
   text-align: center;
+}
+
+main {
+  padding-left: 10px;
+  margin-left: 5px;
 }
