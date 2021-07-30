@@ -172,4 +172,25 @@ background-color: #169eec;
   .grid .span-v {
     grid-row: span 2;
   }
-}
+  .gradient-btn{
+    display: inline-block;
+      padding: 1em 2em;
+      border-radius: 0;
+    color: #7393B3;
+      margin-top:2rem;
+      font-weight: bold;
+      font-size: 0.678rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+    background: linear-gradient(to right, rgba(#7393B3, 0) 25%, rgba(#7393B3, .8) 75%);
+    background-position: 1% 50%;
+    background-size: 400% 300%;
+    border: 1px solid #7393B3;
+    @include transition;
+  }
+    .gradient-btn:hover{
+      color: white;
+        color: #fff;
+        background-position: 99% 50%;
+    } 

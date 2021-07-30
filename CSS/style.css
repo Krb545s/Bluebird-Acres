@@ -23,9 +23,13 @@
       
       .wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
       
+      .wrapperreview {
+        display: grid;
+        grid-template-colomns: 1fr 1fr 1fr 1fr;
+      }
       .sheep {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -210,6 +214,7 @@
         border: 3px solid #9CC1D3;
         border-radius: 50%;
         display: grid;
+        grid-column-start: 4;
         width: 300px;
         height: auto;    
     }
@@ -228,10 +233,7 @@
         text-transform: uppercase;
         text-shadow: 0 1px white; 
     }
-    
-    .testimonial-quote {
-        position: relative; 
-    }
+  
     
     .testimonial-quote .quote-container {
         padding-left: 160px; 
@@ -245,9 +247,7 @@
     .testimonial-quote.right cite {
         text-align: right; 
     }
-    .man {
-        grid-column-start: 3;
-    }
+   
 
     .woman {
         grid-column-start: 1;
@@ -272,3 +272,131 @@ main {
   padding-left: 10px;
   margin-left: 5px;
 }
+
+.man {
+  margin-top: 30px;
+}
+
+.intro {
+  grid-column-start: 3;
+}
+
+.indexwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.whatwedo {
+  text-align: center;
+}
+.gradient-btn{
+	display: inline-block;
+  	padding: 1em 2em;
+  	border-radius: 0;
+	color: #7393B3;
+  	margin-top:2rem;
+  	font-weight: bold;
+  	font-size: 0.678rem;
+  	letter-spacing: 2px;
+  	text-transform: uppercase;
+  	text-decoration: none;
+	background: linear-gradient(to right, rgba(#7393B3, 0) 25%, rgba(#7393B3, .8) 75%);
+	background-position: 1% 50%;
+	background-size: 400% 300%;
+	border: 1px solid #7393B3;
+	@include transition;
+}
+	.gradient-btn:hover{
+		color: white;
+    	color: #fff;
+    	background-position: 99% 50%;
+	} 
+  .indexintro1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+  }
+  .indexintro2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+    font-style: oblique;
+  }
+
+  .gradient-btn2{
+    display: inline-block;
+      padding: 1em 2em;
+      border-radius: 0;
+    color: #7393B3;
+      margin-top:2rem;
+      font-weight: bold;
+      font-size: 0.678rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+    background: linear-gradient(to right, rgba(#7393B3, 0) 25%, rgba(#7393B3, .8) 75%);
+    background-position: 1% 50%;
+    background-size: 400% 300%;
+    border: 1px solid #7393B3;
+    @include transition;
+  }
+    .gradient-btn2:hover{
+      color: white;
+        color: #fff;
+        background-position: 99% 50%;
+    } 
+  
+    
+
+.card-container {
+	align-items: start;
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, 300px);
+	justify-content: center;
+}
+
+.card {
+	background-color: #6F8FAF;
+	border-radius: 5px;
+	color: white;
+	padding: 25px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #555;
+  margin: 15px;
+}
+
+.fas {
+	font-size: 50px;
+}
+
+.card ul{
+  text-align: left;
+}
+
+.pricing-feature-list1 {
+  padding-bottom: 50px;
+}
+.wrappercabin {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.cabinintro {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+
+
+
+
+
+
